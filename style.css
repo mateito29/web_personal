@@ -1,13 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  }
+  /* Estilos para las subsecciones */
+
+  .foto-container{
+    display: flex;
+    color: rgb(89, 0, 255);
+  }
+  .foto-container img{
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .info-container{
+    position: absolute;
+    top: 30%;
+    left: 16%;
+
+  }
+  /* Estilos para el footer */
+  footer {
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
 }
 
-h1{
-    color: rgb(107, 2, 245);
-}
-
-p{
-    color: rgb(160, 130, 105) ;
+@media (max-width: 600px) {
+  .foto-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .info-container {
+    position: static;
+    text-align: center;
+  }
+  .foto-container img {
+    width: 100%; /* Haz que la imagen ocupe todo el ancho */
+  }
 }
